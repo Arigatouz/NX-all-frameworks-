@@ -1,0 +1,20 @@
+{
+  "name": "qwik",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/qwik/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/libs/qwik"
+      }
+    },
+    "lint": {
+      "command": "eslint libs/qwik/**/*.{ts,tsx,js,jsx}"
+    }
+  }
+}

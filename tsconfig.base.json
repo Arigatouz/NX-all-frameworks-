@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@all-frameworks/angular": ["libs/angular/src/index.ts"],
+      "@all-frameworks/qwik": ["libs/qwik/src/index.ts"],
+      "@all-frameworks/react": ["libs/react/src/index.ts"],
+      "@all-frameworks/solid": ["libs/libs/solid/src/index.ts"],
+      "@all-frameworks/svelte": ["libs/libs/svelte/src/index.ts"],
+      "@all-frameworks/vue": ["libs/vue/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

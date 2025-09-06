@@ -135,7 +135,8 @@
       },
       "library": {
         "style": "scss",
-        "linter": "eslint"
+        "linter": "eslint",
+        "unitTestRunner": "vitest"
       }
     },
     "@nx/next": {
@@ -143,6 +144,13 @@
         "style": "scss",
         "linter": "eslint"
       }
+    },
+    "@nx/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "vitest"
+    },
+    "@nx/angular:component": {
+      "style": "css"
     }
   }
 }
