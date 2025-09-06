@@ -1,0 +1,19 @@
+{
+  "name": "svelte-project",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/svelte-project/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "command": "eslint apps/svelte-project/**/*.{ts,svelte,spec.ts}"
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "svelte-check",
+        "cwd": "apps/svelte-project"
+      }
+    }
+  }
+}

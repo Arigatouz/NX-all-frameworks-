@@ -1,0 +1,12 @@
+{
+  "name": "solid-project",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/solid-project/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "command": "eslint apps/solid-project/**/*.{ts,spec.ts,tsx}"
+    }
+  }
+}
