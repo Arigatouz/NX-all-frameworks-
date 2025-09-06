@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/nx/schemas/project-schema.json",
+  "name": "workspace-root",
+  "targets": {
+    "serve-all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "concurrently --kill-others --names \"angular,react,vue,qwik,solid,svelte\" --prefix-colors \"red,blue,green,magenta,white,yellow\" \"npx nx serve angular-project\" \"npx nx serve react-project\" \"npx nx serve vue-project\" \"npx nx serve qwik-project\" \"npx nx serve solid-project\" \"npx nx serve svelte-project\"",
+        "cwd": "."
+      }
+    }
+  }
+}

@@ -2,7 +2,9 @@
   "name": "@all-frameworks/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve:all": "nx run :serve-all"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "~20.1.0",
@@ -122,6 +124,7 @@
     "vite-plugin-solid": "2.10.1",
     "vite-tsconfig-paths": "~4.2.1",
     "vitest": "^3.0.0",
+    "concurrently": "^9.0.1",
     "vue-tsc": "^2.2.8"
   }
 }
