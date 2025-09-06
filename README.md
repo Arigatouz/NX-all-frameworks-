@@ -1,5 +1,22 @@
 # AllFrameworks
 
+## Quick Start
+
+Installation (required)
+
+- Run: `npm install --legacy-peer-deps`
+
+Why use `--legacy-peer-deps`?
+
+- This workspace mixes ESLint 9.x with multiple framework-specific ESLint plugins/configs (for Angular, React, Vue, Qwik, Solid, Svelte, and TypeScript-ESLint). Some of these plugins still declare peerDependencies that don't yet align with ESLint 9.
+- NPM v9/v10 strictly enforces peerDependencies and can fail installation when versions don't match exactly.
+- The `--legacy-peer-deps` flag tells npm to ignore peer dependency conflicts and proceed with installation. In this workspace, Nx and the configured plugins work together despite those peer range mismatches, so this is the most straightforward way to install dependencies.
+
+Serve all apps at once
+
+- Run: `npm run serve:all`
+- This uses an Nx target defined at the workspace root that runs all app dev servers concurrently (Angular, React, Vue, Qwik, Solid, Svelte). Output is color-coded per app to make logs easy to follow. Press Ctrl+C once to stop everything.
+
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
 ✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
@@ -13,10 +30,42 @@
 
 ## Run tasks
 
-To run the dev server for your app, use:
+To run a specific project's dev server, use one of the following commands:
+
+- Angular:
 
 ```sh
 npx nx serve angular-project
+```
+
+- React:
+
+```sh
+npx nx serve react-project
+```
+
+- Vue:
+
+```sh
+npx nx serve vue-project
+```
+
+- Qwik:
+
+```sh
+npx nx serve qwik-project
+```
+
+- Solid:
+
+```sh
+npx nx serve solid-project
+```
+
+- Svelte:
+
+```sh
+npx nx serve svelte-project
 ```
 
 To create a production bundle:
