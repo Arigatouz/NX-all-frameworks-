@@ -55,7 +55,7 @@
     "@nx/workspace": "21.4.1",
     "@nxext/solid": "^21.0.0",
     "@nxext/svelte": "^21.0.0",
-    "@playwright/test": "^1.36.0",
+    "@playwright/test": "^1.56.1",
     "@schematics/angular": "~20.1.0",
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
     "@swc-node/register": "~1.9.1",
