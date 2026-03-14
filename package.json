@@ -118,7 +118,7 @@
     "tslib": "^2.3.0",
     "typescript": "~5.8.2",
     "typescript-eslint": "^8.29.0",
-    "undici": "^5.22.0",
+    "undici": "^7.24.2",
     "vite": "^6.3.6",
     "vite-plugin-dts": "~4.5.0",
     "vite-plugin-solid": "2.10.1",
